@@ -80,7 +80,7 @@ sudo systemctl status coinbase-bot
 ### 5. 🔁 Test the Bot
 
 ```bash
-curl -X POST "http://<YOUR WEBHOOK IP>/?secret=c91f7de31b78462e9e99db41545cd08a" \
+curl -X POST "http://<YOUR WEBHOOK IP>/?secret=SUPER_SECRET_KEY" \
 -H "Content-Type: text/plain" -d "PING"
 ```
 
@@ -90,4 +90,4 @@ Expected response: `PONG`
 
 ## 📌 Notes
 
-- Make sure the secret in the request matches the one your bot expects.
+- Make sure the secret in the request matches the one your bot expects. (Change SUPER_SECRET_KEY to your own)
